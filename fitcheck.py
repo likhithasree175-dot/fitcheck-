@@ -84,17 +84,6 @@ QUESTIONS = [
 ]
 
 
-def banner():
-    print(C.PINK + C.BOLD)
-    print(r"""
-   _____ __ __     _____ __            __
-  / __(_) /_  ____/ ___// /_  ___  ____/ /__
- / /_/ / __/ / ___/\__ \/ __ \/ _ \/ __  / _ \
-/ __/ / /_  / /   ___/ / / / /  __/ /_/ /  __/
-/_/ /_/\__/ /_/   /____/_/ /_/\___/\__,_/\___/
-    """)
-    print(C.RESET + C.LILAC + "fashion style dna — 5 questions, zero overthinking, one dominant vibe" + C.RESET + "\n")
-
 
 def progress_bar(done, total, width=30):
     filled = int(width * (done / total))
@@ -191,7 +180,6 @@ def show_chart(percentages, dominant_style):
 
 
 def main():
-    banner()
     print("the assignment: answer 5 questions, find out your fit's whole personality.\n")
 
     scores = run_quiz()
